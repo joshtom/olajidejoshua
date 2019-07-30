@@ -1,0 +1,88 @@
+body{
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+    color: #fff;
+    font-size: 16px;
+
+}
+@media screen and (max-width: 760px) {
+    body{font-size: 16px}
+    body span.lpage-header{
+        font-size: 7em;
+        display: block;
+    }
+}
+@media screen and (max-width: 400px) {
+    body{font-size: 16px; padding: 0 1em; display: flex;}
+    body span.lpage-header{font-size: 3.5em; font-weight: bolder;}
+    body span.lpage-text{font-size: 1.6em !important; font-weight: lighter;}
+    section{margin: auto;}
+}
+@media screen and (max-width: 960px) {
+    body span.lpage-header{
+        font-size: 4rem; 
+        font-weight: bolder;
+    }
+}
+body span.lpage-header{
+    font-size: 5rem; 
+    font-weight: bolder;
+}
+div.container{
+    height: auto;
+    margin-top:150px;
+}
+body span.lpage-text{
+    font-size:2em;
+    /* color: #ffffff91; */
+    color: rgba(255, 255, 255, 0.57);
+    letter-spacing: 0.10em;
+    display: block;
+    
+}
+
+button.lpage-btn{
+    padding: 1em 1.5em;
+    background: #fff;
+    border: none;
+    font-family: 'Abel', sans-serif;
+    font-weight: bolder;
+    color: #2843AC;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 2em;
+    transition: all 350ms ease-in-out;
+    
+}
+button.lpage-btn:hover{
+    background: #3475E6;
+    color: #fff;
+}
+button.lpage-btn:nth-child(2){
+    position: relative;
+    left: 20px;
+}
+footer{
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+footer.social-icons h3{
+    display: inline-block;
+    color: #ffffff7a;
+}
+footer.social-icons i {
+    font-size: 25px;
+}
+footer.social-icons a {
+    color: #fff; 
+}
+footer.social-icons i{
+    transition: all 200ms ease-in-out;
+    padding: 10px;
+}
+footer.social-icons i:hover{
+    transform: scale(1.1);
+}
