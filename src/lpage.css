@@ -44,7 +44,10 @@ body span.lpage-text{
 
 button.lpage-btn{
     padding: 1em 1.5em;
-    background: #fff;
+    background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     border: none;
     font-family: 'Abel', sans-serif;
     font-weight: bolder;
@@ -57,7 +60,9 @@ button.lpage-btn{
     
 }
 button.lpage-btn:hover{
-    background: #3475E6;
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
     color: #fff;
 }
 button.lpage-btn:nth-child(2){
@@ -68,6 +73,10 @@ footer{
     height: auto;
     position: absolute;
     bottom: 0;
+    margin: auto;
+    left: auto;
+    left: 50%;
+    margin-left: -120px;
 }
 footer.social-icons h3{
     display: inline-block;
