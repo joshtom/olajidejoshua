@@ -1,6 +1,8 @@
 import React from 'react';
+import './App.css';
 import './lpage.css';
 import {Link} from 'react-router-dom';
+import Foot from './Footer'
 import {Animated} from 'react-animated-css';
 
 const btnStyle = {
@@ -14,7 +16,7 @@ class Lpage extends React.Component {
     render() {
         return(
             <div>
-    <div className="lpageBody">
+    <div className="lpage">
     <div className="container">
     <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -23,19 +25,13 @@ class Lpage extends React.Component {
     </Animated>
     <span className="lpage-text">Javascript developer and lifelong learner.</span>
     <div className="btn-group">
-        <Link to="/about"><button className="lpage-btn">About Me</button></Link>
+        <Link to="/contact"><button className="lpage-btn">Hire Me</button></Link>
         <Link to="/home"><button style={btnStyle} className="lpage-btn" >Take A Tour</button></Link>
     </div>
     </div>
     </div>
     </div>
-    <footer className="social-icons">
-      <h3>Follow me on</h3> 
-      <a href="https://twitter.com"><i className="fa fa-twitter"></i></a>
-      <a href="https://github.com"><i className="fa fa-github"></i></a>
-      <a href="https://linkedin.com"><i className="fa fa-linkedin"></i></a>
-      <a href="https://google.com"><i className="fa fa-google"></i></a>
-    </footer>
+    <Foot/>
     </div>
     </div>
         )

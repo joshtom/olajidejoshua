@@ -1,18 +1,24 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+import './lpage'
 
-const navStyle = {
-    border: '1px solid red',
-    
-    
-}
 
 class Nav extends React.Component{
     render() {
         return(
             <div> 
-                <div className="container" style={navStyle}>
-                <h1> Welcome to he navbar </h1>
-                </div>
+                    <nav className="container" >
+                    <span className="nav-logo"><Link to="/">Joshua</Link></span>
+                    <section className="nav-links">
+                    
+                        <Link to="/home">Home</Link>
+                        <Link to="/about">About</Link>
+                        <Link to="/contact">Hire Me</Link>
+                        <Link to="/portfolio">Portfolio</Link>
+                    
+                    </section>
+                    </nav>
+
             </div>
         );
     }
