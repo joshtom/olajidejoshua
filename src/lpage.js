@@ -14,6 +14,15 @@ const btnStyle = {
 
 class Lpage extends React.Component {
     render() {
+        if(this.props.location.pathname === '/home'){
+            console.log(this.props.location.pathname);
+            document.body.style.backgroundColor ='';
+            document.body.style.background = 'linear-gradient(to right, rgb(168, 19, 49), rgb(168, 19, 49))';
+          }else if(this.props.location.pathname === '/'){
+            console.log(this.props.location.pathname);
+            document.body.style.background = '';
+            document.body.style.backgroundColor = 'red';
+          }
         return(
             <div>
     <div className="lpage">

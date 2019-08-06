@@ -7,6 +7,8 @@ import Foot from './Footer'
 
 class Home extends React.Component {
     render() {
+    
+ 
         return(
             <div>
             <div className="h-page">
