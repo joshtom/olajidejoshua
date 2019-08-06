@@ -1,18 +1,40 @@
-import React from 'react'
-import './lpage.css'
+import React, { Component } from 'react'
+import styled from 'styled-components'
 
+const Footer = styled.footer`
+    height: auto;
+    position: absolute;
+    bottom: 10px;;
+    display: block;
+    width: 100%;
+    background: transparent;
+    
+`
+const SocialIcons = styled.div`
+     text-align: center;
+     color: #ffffff7a;
+     font-size: 1.2rem;
+     margin-left: 10px;
+`
+const FooterLink = {
+    color: '#fff',
+    marginLeft: '15px'
+}
 
-class Foot extends React.Component{
+class Foot extends Component{
     render() {
         return(
             <div> 
-             <footer className="social-icons">
-            <h3>Follow me on</h3> 
-            <a href="https://twitter.com"><i className="fa fa-twitter"></i></a>
-            <a href="https://github.com"><i className="fa fa-github"></i></a>
-            <a href="https://linkedin.com"><i className="fa fa-linkedin"></i></a>
-            <a href="https://google.com"><i className="fa fa-google"></i></a>
-            </footer>
+             <Footer className="social-icons">
+             <SocialIcons>
+             <center>
+            <a href="https://twitter.com/olatojoshua" target="_blank" rel="noopener" style={FooterLink}><i className="fa fa-twitter" ></i></a>
+            <a href="https://github.com/joshtom/" target="_blank" rel="noopener"  style={FooterLink}><i className="fa fa-github" ></i></a>
+            <a href="https://www.linkedin.com/in/joshua-olajide-582457177/" target="_blank" rel="noopener" style={FooterLink}><i className="fa fa-linkedin" ></i></a>
+            <a href="https://medium.com/@olajidejoshua4real" target="_blank" rel="noopener" style={FooterLink}><i className="fa fa-medium" ></i></a>
+            </center>
+            </SocialIcons>
+            </Footer>
             </div>
         );
     }

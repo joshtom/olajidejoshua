@@ -1,13 +1,14 @@
 import React from 'react'
 import Nav from './navbar'
-import './home.css'
 import { Link } from 'react-router-dom'
 import Foot from './Footer'
 
 
 class Home extends React.Component {
     render() {
-    
+    if(this.props.location.pathname){
+        document.body.style.background = 'linear-gradient(to right, rgb(168, 19, 49), rgb(168, 19, 49))';
+    }
  
         return(
             <div>
