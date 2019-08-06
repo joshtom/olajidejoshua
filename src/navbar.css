@@ -1,0 +1,36 @@
+nav{
+    border: 1px solid transparent;
+    padding: 25px;
+    width: 100%;
+    display: flex;
+}
+nav span.nav-logo a{
+    font-size: 25px;
+    color: red;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: 500ms ease-in-out;
+}
+nav span.nav-logo a:hover{
+    color: rgba(255, 255, 255, 0.57);
+}
+section.nav-links{
+    text-decoration: none;
+    background-color: transparent;
+    margin-left: auto;
+    height: auto;
+    border: 2px solid blue;
+    
+}
+section.nav-links a{
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    transition: 500ms ease-out;
+}
+section.nav-links a:hover{
+    color: rgba(255, 255, 255, 0.57);
+}
