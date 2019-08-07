@@ -52,7 +52,7 @@ const Button = styled.button`
 class Lpage extends React.Component {
     render() {
         if(this.props.location.pathname){
-            document.body.style.background = 'url("https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"),linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.6))';
+            document.body.style.background = 'linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.8)), url("https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")';
             document.body.style.backgroundSize = "cover";
     
           }
