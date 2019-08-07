@@ -10,7 +10,6 @@ class Nav extends React.Component{
                     <nav className="container">
                     <span className="nav-logo"><Link to="/">Joshua</Link></span>
                     <section className="nav-links">
-                    
                         <Link to="/home">Home</Link>
                         <Link to="/about">About</Link>
                         <Link to="/contact">Hire Me</Link>

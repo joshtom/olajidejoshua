@@ -3,13 +3,36 @@ nav{
     padding: 25px;
     width: 100%;
     display: flex;
+
 }
 nav span.nav-logo a{
     font-size: 25px;
-    color: red;
+    color: white;
     font-weight: bolder;
     text-decoration: none;
     transition: 500ms ease-in-out;
+    padding: 2px;
+}
+@media (max-width: 567px) {
+    nav.container{
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        flex-wrap: wrap;
+    }
+    nav span.nav-logo{
+        margin: auto;
+        align-self: center;
+        justify-content: center;
+        margin-bottom: 3px;
+    }
+    nav section.nav-links{
+        justify-content: center;
+        justify-self: center;
+        width: 100%;
+        text-align: center;
+        
+    }
 }
 nav span.nav-logo a:hover{
     color: rgba(255, 255, 255, 0.57);
@@ -19,15 +42,14 @@ section.nav-links{
     background-color: transparent;
     margin-left: auto;
     height: auto;
-    border: 2px solid blue;
     
 }
 section.nav-links a{
     list-style-type: none;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 10px;
     font-size: 20px;
-    color: red;
+    color: white;
     font-weight: bold;
     transition: 500ms ease-out;
 }
