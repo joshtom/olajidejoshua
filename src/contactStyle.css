@@ -1,8 +1,52 @@
 .drop-btn {
     padding: .7em 2em;
-    background: purple;
+    background: #3d475ac9;
     border: none;
     color: #fff;
-    font-weight: bold;
+    /* font-weight: bold; */
 
+}
+textarea.c-input,input.c-input{
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #999999;
+    background: transparent;
+    color: white;
+    padding-left: 10px;
+    transition: all 300ms ease-in-out;
+}
+textarea.c-input:focus,input.c-input:focus{
+   border-bottom: 1px solid white;
+   padding-left: 1em;
+}
+textarea.c-input{
+    height: 100px;
+}
+span.ama{
+    font-weight: lighter;
+    font-size: 20px;
+    margin-left: 10px;
+}
+span.ama a{
+    padding: .3em;
+    /* border: 1px solid red; */
+    color: #eee;
+    text-decoration-line: underline;
+}
+@media (max-width: 567px) {
+    p.c-text{
+        text-align: center;
+    }
+    textarea.c-input{
+        height: 50px;
+    }
+    button.drop-btn {
+        display: block;
+        width: 100%;
+    }
+    span.ama{
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+    }
 }

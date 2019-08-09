@@ -13,6 +13,14 @@ nav span.nav-logo a{
     transition: 500ms ease-in-out;
     padding: 2px;
 }
+.PNav nav span.nav-logo a{
+    font-size: 25px;
+    color: black;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: 500ms ease-in-out;
+    padding: 2px;
+}
 @media (max-width: 567px) {
     nav.container{
         display: flex;
@@ -35,7 +43,10 @@ nav span.nav-logo a{
     }
 }
 nav span.nav-logo a:hover{
-    color: rgba(255, 255, 255, 0.57);
+    color: rgba(136, 126, 126, 0.57);
+}
+.PNav nav span.nav-logo a:hover{
+    color: crimson;
 }
 section.nav-links{
     text-decoration: none;
@@ -53,6 +64,20 @@ section.nav-links a{
     font-weight: bold;
     transition: 500ms ease-out;
 }
+
+.PNav section.nav-links a{
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    transition: 500ms ease-out;
+}
 section.nav-links a:hover{
     color: rgba(255, 255, 255, 0.57);
+}
+.PNav section.nav-links a:hover{
+    /* transform: scale(1.2); */
+    color: crimson;
 }

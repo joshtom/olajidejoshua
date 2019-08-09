@@ -1,0 +1,13 @@
+.portfolio .container {
+    background: white;
+    box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.2), 0 -1px 5px 0 rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 25px 30px 25px 30px;
+    overflow: hidden;
+}
+.portfolio .container .row.mb{
+    margin-bottom: 5rem;
+}
+.portfolio .container .p-img img{
+    width: 100%;
+}

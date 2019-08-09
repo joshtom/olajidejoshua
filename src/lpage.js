@@ -4,25 +4,19 @@ import {Link} from 'react-router-dom';
 import Foot from './Footer'
 import {Animated} from 'react-animated-css';
 import styled from 'styled-components'
+import './lpage.css'
 
 const btnStyle = {
     marginLeft: '20px'
 }
-const WhiteColor = styled.h1`
-    color: white;
-    font-weight: bolder;
 
-    @media (max-width: 576px) {
-    html { font-size: 0.85rem; }
-}
-`
 const Container = {
      height: 'auto',
      marginTop:'150px'
 }
 const Text = styled.span`
     font-size:2em;
-    color: rgba(255, 255, 255, 0.57);
+    color: rgba(255, 255, 255, .8);
     letter-spacing: 0.10em;
     display: block;
 
@@ -36,7 +30,7 @@ const Button = styled.button`
     border: none;
     font-family: 'Abel', sans-serif;
     font-weight: bolder;
-    color: #2843AC;
+    color: #1E150F;
     cursor: pointer;
     border-radius: 5px;
     font-size: 1em;
@@ -44,8 +38,9 @@ const Button = styled.button`
     transition: all 350ms ease-in-out;
 
     &:hover {
-        background: rgba(0, 0, 0, .4);
+        background: rgba(0, 0, 0, .6);
         color: #fff;
+        box-shadow: 1px 2px 5px 0 rgba(255,255,255,.5), 0 -1px 5px 0 white;
     }
 `
 
@@ -54,7 +49,20 @@ class Lpage extends React.Component {
         if(this.props.location.pathname){
             document.body.style.background = 'linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.8)), url("https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")';
             document.body.style.backgroundSize = "cover";
-    
+            // document.body.style.backgroundPosition = "50% 50%";
+            // document.body.style.backgroundRepeat = 'no-repeat';
+
+            const mobile = (value) => {
+                if(value.matches) {
+                    document.body.style.background = 'linear-gradient(to right, #396afc, #2948ff)';
+                } else {
+                    return false;
+                }
+            }
+            let value = window.matchMedia("(max-width: 567px)");
+            mobile(value);
+            value.addListener(mobile);
+            
           }
         return(
             <div>
@@ -63,9 +71,9 @@ class Lpage extends React.Component {
     <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
-    <WhiteColor className="display-1"> Olajide Joshua. </WhiteColor>
+    <h1 className="lpage-header"> Olajide Joshua. </h1>
     </Animated>
-    <Text>Javascript developer and lifelong learner.</Text>
+    <Text className="lpage-text">Javascript developer and lifelong learner.</Text>
     <div className="btn-group">
         <Link to="/contact"><Button>Hire Me</Button> </Link>
         <Link to="/home"><Button style={btnStyle}>Take A Tour</Button></Link>
