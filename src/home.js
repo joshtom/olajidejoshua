@@ -64,7 +64,7 @@ class Home extends React.Component {
  
         return(
             <div>
-            <div className="h-page">
+            <div className="h-page mb-5" >
             <Nav />
             <Container className="container">
             <div className="row m-auto">

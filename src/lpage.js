@@ -71,7 +71,7 @@ class Lpage extends React.Component {
           }
         return(
             <div>
-    <div className="lpage">
+    <div className="lpage" style={{height: '65vh'}}>
     <div className="container" style={Container}>
     <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -86,8 +86,9 @@ class Lpage extends React.Component {
     </div>
     </div>
     </div>
-    <Foot/>
+   
     </div>
+    <Foot/>
     </div>
         )
     }

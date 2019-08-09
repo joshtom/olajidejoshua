@@ -4,9 +4,11 @@ import PNav from './PNav.js'
 import './portStyle.css'
 import styled from 'styled-components';
 import devalert from './devalert.png';
+import connectfour from './connectfour.png'
+import dew from './dewimage.png'
 
 const Purple = styled.span`
-    color: purple;
+    color: #6E62FE;
     font-weight: bold;
 `
 const Crimson = styled.span`
@@ -15,6 +17,14 @@ const Crimson = styled.span`
 `
 const Dark = styled.span`
     color: black;
+    font-weight: bold;
+`
+const Green = styled.span`
+    color: #60D07E;
+    font-weight: bold;
+`
+const Grey = styled.span`
+    color: #2A3347;
     font-weight: bold;
 `
 
@@ -56,7 +66,8 @@ class Portfolio extends Component {
                     <h4>DevAlert</h4>
                     <p><Purple>Design </Purple> | <Crimson> Front-End Development </Crimson>| <Dark>Digital-Marketing </Dark></p>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis molestias cupiditate nesciunt, similique labore fugiat facere voluptatem! Minus vero laborum, doloremque culpa ipsa veritatis consectetur rerum quo sit quam vitae.
+                       DevAlert is an app that connects developers around the world with employers out there. But you may be wondering that there are other apps out there that does this same thing like, linkedin, jobberman and all sort. What makes this app stand out is that once a developer registers they will be linked with someone that offers mentorship and more. I worked remotely as a front-End engineer in building this app. <br />
+                       <a href="https://devalert.me">Go to App</a>
                     </p>
                     </div>
                 </div>
@@ -70,16 +81,17 @@ class Portfolio extends Component {
             <div className="row m-auto ">
             <div className="col-lg-7 col-md-8 col-sm-12 d-flex">
                 <div className="p-content m-auto">
-                <h4>DevAlert</h4>
-                <p><Purple>Design </Purple> | <Crimson> Front-End Development </Crimson>| <Dark>Digital-Marketing </Dark></p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis molestias cupiditate nesciunt, similique labore fugiat facere voluptatem! Minus vero laborum, doloremque culpa ipsa veritatis consectetur rerum quo sit quam vitae.
+                <h4>Dew Network</h4>
+                <p><Purple>Design </Purple> | <Crimson> Front-End Development </Crimson>| <Dark>SEO</Dark></p>
+                <p> Dew Network is a three-month  program that empowers students most expecially undergraduates to have the most demanded skill in the industry by learning the latest technologies.
+                    <br />
+                    <a href="http://dew.com.ng" rel="noopener noreferrer" target="_blank" title="http://dew.com.ng" >Go to app</a>
                 </p>
                 </div>
             </div>
             <div className="col-lg-5 col-md-4 col-sm-12">
                 <div className="p-img">
-                <img src="https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+                <img src={dew}/>
                 </div>
             </div>
             
@@ -89,16 +101,18 @@ class Portfolio extends Component {
             <div className="row m-auto ">
             <div className="col-lg-7 col-md-8 col-sm-12 d-flex">
                 <div className="p-content m-auto">
-                <h4>DevAlert</h4>
-                <p><Purple>Design </Purple> | <Crimson> Front-End Development </Crimson>| <Dark>Digital-Marketing </Dark></p>
+                <h4>CONNECT FOUR GAME</h4>
+                <p><Green>Design </Green> | <Crimson> Front-End Development </Crimson>| <Grey> User Interaction </Grey></p>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis molestias cupiditate nesciunt, similique labore fugiat facere voluptatem! Minus vero laborum, doloremque culpa ipsa veritatis consectetur rerum quo sit quam vitae.
+                    Connect four is a hobby Project i worked on to take my javascript skills to the next level. The interface is built with SVG and CSS. To have a better User Experience, open the app on your system and on a chrome browser. *no support for mobile devices*
+                    <br />
+                    <a href="https://joshtom.github.io/connect-four-game/" rel="noopener noreferrer" target="_blank" title="https://joshtom.github.io/connect-four-game/"> Click to play </a>
                 </p>
                 </div>
             </div>
             <div className="col-lg-5 col-md-4 col-sm-12">
                 <div className="p-img">
-                <img src="https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+                <img src={connectfour}/>
                 </div>
             </div>
             
@@ -108,13 +122,13 @@ class Portfolio extends Component {
         <article> To view more Projects, Check my <a href="https://github.com/joshtom?tab=repositories" rel="noopener noreferrer" target="_blank" title="https://github.com/joshtom?tab=repositories">Github</a> </article>
             </div>
             </div>
-            <div> 
+            <div className="mt-4"> 
       
              <center>
-            <a href="https://twitter.com/olatojoshua" target="_blank" rel="noopener" ><i className="fa fa-twitter" ></i></a>
-            <a href="https://github.com/joshtom/" target="_blank" rel="noopener" ><i className="fa fa-github" ></i></a>
-            <a href="https://www.linkedin.com/in/joshua-olajide-582457177/" target="_blank" rel="noopener"><i className="fa fa-linkedin" ></i></a>
-            <a href="https://medium.com/@olajidejoshua4real" target="_blank" rel="noopener"><i className="fa fa-medium" ></i></a>
+            <a href="https://twitter.com/olatojoshua" target="_blank" rel="noopener" className="ml-2 text-dark"><i className="fa fa-twitter" ></i></a>
+            <a href="https://github.com/joshtom/" target="_blank" rel="noopener" className="ml-2 text-dark"><i className="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/joshua-olajide-582457177/" target="_blank" rel="noopener" className="ml-2 text-dark"><i className="fa fa-linkedin" ></i></a>
+            <a href="https://medium.com/@olajidejoshua4real" target="_blank" rel="noopener" className="ml-2 text-dark"><i className="fa fa-medium" ></i></a>
             </center>
             </div>
             </div>
