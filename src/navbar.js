@@ -8,12 +8,12 @@ class Nav extends React.Component{
         return(
             <div> 
                     <nav className="container">
-                    <span className="nav-logo"><Link to="/">Joshua</Link></span>
+                    <span className="nav-logo"><Link to="/">Joshua.</Link></span>
                     <section className="nav-links">
-                        <Link to="/home">Home</Link>
-                        <Link to="/about">About</Link>
-                        <Link to="/contact">Hire Me</Link>
-                        <Link to="/portfolio">Portfolio</Link>
+                        <Link to="/home">home</Link>
+                        <Link to="/about">about</Link>
+                        <Link to="/contact">contact</Link>
+                        <Link to="/portfolio">portfolio</Link>
                     
                     </section>
                     </nav>

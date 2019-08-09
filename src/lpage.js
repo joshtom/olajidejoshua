@@ -31,7 +31,7 @@ const Text = styled.span`
 }
 `
 const Button = styled.button`
-     padding: 1em 1.5em;
+    padding: 1em 1.5em;
     background: #fff;
     border: none;
     font-family: 'Abel', sans-serif;
