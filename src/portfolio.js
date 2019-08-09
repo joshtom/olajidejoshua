@@ -3,6 +3,7 @@ import PNav from './PNav.js'
 // import Foot from './Footer'
 import './portStyle.css'
 import styled from 'styled-components';
+import devalert from './devalert.png';
 
 const Purple = styled.span`
     color: purple;
@@ -61,7 +62,7 @@ class Portfolio extends Component {
                 </div>
                 <div className="col-lg-5 col-md-4 col-sm-12">
                     <div className="p-img">
-                    <img src="https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+                    <img src={devalert} alt="Logo"/>
                     </div>
                 </div>
             </div>

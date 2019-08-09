@@ -42,6 +42,10 @@ const Button = styled.button`
         color: #fff;
         box-shadow: 1px 2px 5px 0 rgba(255,255,255,.5), 0 -1px 5px 0 white;
     }
+
+    @media (max-width: 567px) {
+        color: #2948ff;
+    }
 `
 
 class Lpage extends React.Component {
@@ -56,7 +60,8 @@ class Lpage extends React.Component {
                 if(value.matches) {
                     document.body.style.background = 'linear-gradient(to right, #396afc, #2948ff)';
                 } else {
-                    return false;
+                    document.body.style.background = 'linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.8)), url("https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")';
+                    document.body.style.backgroundSize = "cover";
                 }
             }
             let value = window.matchMedia("(max-width: 567px)");
