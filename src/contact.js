@@ -14,7 +14,7 @@ class Contact extends Component {
         return(
             <div>
             <Nav />
-            <div className="container mt-5 p-2">
+            <div className="container mt-5 p-2 mb-4">
                 <div className="row">
                     <div className="col-lg-8 col-md-12 col-sm-12">
                         <h1 className="mb-5">contact</h1>
@@ -25,7 +25,7 @@ class Contact extends Component {
                             <input className="d-block w-100 c-input" type="email" placeholder="Your Email" id="email" />
                             <textarea className="d-block w-100 c-input" id="message" placeholder="Your Message"></textarea>
                             <p className="c-text">Please send urgent messages only.</p>
-                            <button className="drop-btn" > SHOOT ! </button> <span className="ama">Have a question? <a href="https://github.com/joshtom/ama" target="_blank" rel="noopener">Ask me anything.</a></span>
+                            <button className="drop-btn" > SHOOT ! </button> <span className="ama">Have a question? <a href="https://github.com/joshtom/ama">Ask me anything.</a></span>
 
                         </form>
                     </div>

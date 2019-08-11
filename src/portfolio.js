@@ -49,7 +49,7 @@ class Portfolio extends Component {
                 <div className="col-lg-8 col-md-8 col-sm-12">
                     <div className="p-content">
                     <h3>I <strong>design</strong> and <strong>build</strong> web applications</h3>
-                    {/* <h4>Below are few of what i have worked on to view more visit <a href="https://github.com/joshtom" target="_blank" rel="noopener">https://github.com/joshtom</a></h4> */}
+                    {/* <h4>Below are few of what i have worked on to view more visit <a href="https://github.com/joshtom" >https://github.com/joshtom</a></h4> */}
                     </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-12">
@@ -85,13 +85,13 @@ class Portfolio extends Component {
                 <p><Purple>Design </Purple> | <Crimson> Front-End Development </Crimson>| <Dark>SEO</Dark></p>
                 <p> Dew Network is a three-month  program that empowers students most expecially undergraduates to have the most demanded skill in the industry by learning the latest technologies.
                     <br />
-                    <a href="http://dew.com.ng" rel="noopener noreferrer" target="_blank" title="http://dew.com.ng" >Go to app</a>
+                    <a href="http://dew.com.ng"  title="http://dew.com.ng" >Go to app</a>
                 </p>
                 </div>
             </div>
             <div className="col-lg-5 col-md-4 col-sm-12">
                 <div className="p-img">
-                <img src={dew}/>
+                <img src={dew} alt="Dew-logo"/>
                 </div>
             </div>
             
@@ -106,29 +106,29 @@ class Portfolio extends Component {
                 <p>
                     Connect four is a hobby Project i worked on to take my javascript skills to the next level. The interface is built with SVG and CSS. To have a better User Experience, open the app on your system and on a chrome browser. *no support for mobile devices*
                     <br />
-                    <a href="https://joshtom.github.io/connect-four-game/" rel="noopener noreferrer" target="_blank" title="https://joshtom.github.io/connect-four-game/"> Click to play </a>
+                    <a href="https://joshtom.github.io/connect-four-game/"  title="https://joshtom.github.io/connect-four-game/"> Click to play </a>
                 </p>
                 </div>
             </div>
             <div className="col-lg-5 col-md-4 col-sm-12">
                 <div className="p-img">
-                <img src={connectfour}/>
+                <img src={connectfour} alt="connectFour-logo"/>
                 </div>
             </div>
             
             
         </div>
         <hr />
-        <article> To view more Projects, Check my <a href="https://github.com/joshtom?tab=repositories" rel="noopener noreferrer" target="_blank" title="https://github.com/joshtom?tab=repositories">Github</a> </article>
+        <article> To view more Projects, Check my <a href="https://github.com/joshtom?tab=repositories"  title="https://github.com/joshtom?tab=repositories">Github</a> </article>
             </div>
             </div>
             <div className="mt-4"> 
       
              <center>
-            <a href="https://twitter.com/olatojoshua" target="_blank" rel="noopener" className="ml-2 text-dark"><i className="fa fa-twitter" ></i></a>
-            <a href="https://github.com/joshtom/" target="_blank" rel="noopener" className="ml-2 text-dark"><i className="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/joshua-olajide-582457177/" target="_blank" rel="noopener" className="ml-2 text-dark"><i className="fa fa-linkedin" ></i></a>
-            <a href="https://medium.com/@olajidejoshua4real" target="_blank" rel="noopener" className="ml-2 text-dark"><i className="fa fa-medium" ></i></a>
+            <a href="https://twitter.com/olatojoshua"  className="ml-2 text-dark"><i className="fa fa-twitter" ></i></a>
+            <a href="https://github.com/joshtom/"  className="ml-2 text-dark"><i className="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/joshua-olajide-582457177/"  className="ml-2 text-dark"><i className="fa fa-linkedin" ></i></a>
+            <a href="https://medium.com/@olajidejoshua4real"  className="ml-2 text-dark"><i className="fa fa-medium" ></i></a>
             </center>
             </div>
             </div>

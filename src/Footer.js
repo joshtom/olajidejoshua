@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Footer = styled.footer`
     height: auto;
-    ${'' /* position: absolute; */}
+    position: absolute;
     bottom: 10px;;
     display: block;
     width: 100%;
@@ -29,10 +29,10 @@ class Foot extends Component{
              <Footer className="social-icons">
              <SocialIcons>
              <center>
-            <a href="https://twitter.com/olatojoshua" target="_blank" rel="noopener" style={FooterLink}><i className="fa fa-twitter" ></i></a>
-            <a href="https://github.com/joshtom/" target="_blank" rel="noopener"  style={FooterLink}><i className="fa fa-github" ></i></a>
-            <a href="https://www.linkedin.com/in/joshua-olajide-582457177/" target="_blank" rel="noopener" style={FooterLink}><i className="fa fa-linkedin" ></i></a>
-            <a href="https://medium.com/@olajidejoshua4real" target="_blank" rel="noopener" style={FooterLink}><i className="fa fa-medium" ></i></a>
+            <a href="https://twitter.com/olatojoshua"  style={FooterLink}><i className="fa fa-twitter" ></i></a>
+            <a href="https://github.com/joshtom/"   style={FooterLink}><i className="fa fa-github" ></i></a>
+            <a href="https://www.linkedin.com/in/joshua-olajide-582457177/"  style={FooterLink}><i className="fa fa-linkedin" ></i></a>
+            <a href="https://medium.com/@olajidejoshua4real"  style={FooterLink}><i className="fa fa-medium" ></i></a>
             </center>
             </SocialIcons>
             </Footer>

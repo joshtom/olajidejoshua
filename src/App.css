@@ -4,6 +4,7 @@
 body{
   font-family: 'Abel', sans-serif;
   transition: all 1s ease-in-out infinite;
+  overflow-x: hidden;
 }
 *:focus{
     outline: none;
