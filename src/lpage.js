@@ -15,10 +15,12 @@ const Container = {
      marginTop:'150px'
 }
 const Text = styled.span`
-    font-size:2em;
-    color: rgba(255, 255, 255, .8);
+    font-size:1.8em;
+    color: rgba(255, 255, 255, .9);
+    ${'' /* color: white; */}
     letter-spacing: 0.10em;
     display: block;
+    
 
     @media (max-width: 576px) {
     html { font-size: 0.85rem; }
@@ -78,10 +80,9 @@ class Lpage extends React.Component {
     <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
-    <h3 style={{color: '#fff', fontWeight:'bold'}}> Hello! </h3>
-    <h1 className="lpage-header"> Olajide Joshua. </h1>
+    <h1 className="lpage-header"> Hi. I'm Joshua,                                                </h1>
     </Animated>
-    <Text className="lpage-text">User-interface Designer. Javascript developer. Lifelong learner.</Text>
+    <Text className="lpage-text">I am a User-interface Designer, Javascript developer, and Lifelong learner.</Text>
     <div className="btn-group">
         <Link to="/contact"><Button>Hire Me</Button> </Link>
         <Link to="/home"><Button style={btnStyle}>Take A Tour</Button></Link>
