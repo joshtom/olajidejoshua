@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Footer = styled.footer`
     height: auto;
-    position: absolute;
+    ${'' /* position: absolute; */}
     bottom: 10px;;
     display: block;
     width: 100%;

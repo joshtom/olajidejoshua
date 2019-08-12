@@ -44,7 +44,9 @@ const Button = styled.button`
     }
 
     @media (max-width: 567px) {
-        color: #2948ff;
+        background: rgba(0, 0, 0, .6);
+        color: #fff;
+        box-shadow: 1px 2px 5px 0 rgba(255,255,255,.5), 0 -1px 5px 0 white
     }
 `
 
@@ -56,29 +58,30 @@ class Lpage extends React.Component {
             // document.body.style.backgroundPosition = "50% 50%";
             // document.body.style.backgroundRepeat = 'no-repeat';
 
-            const mobile = (value) => {
-                if(value.matches) {
-                    document.body.style.background = 'linear-gradient(to right, #396afc, #2948ff)';
-                } else {
-                    document.body.style.background = 'linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.8)), url("https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")';
-                    document.body.style.backgroundSize = "cover";
-                }
-            }
-            let value = window.matchMedia("(max-width: 567px)");
-            mobile(value);
-            value.addListener(mobile);
+            // const mobile = (value) => {
+            //     if(value.matches) {
+            //         document.body.style.background = 'linear-gradient(to right, #396afc, #2948ff)';
+            //     } else {
+            //         document.body.style.background = 'linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.8)), url("https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")';
+            //         document.body.style.backgroundSize = "cover";
+            //     }
+            // }
+            // let value = window.matchMedia("(max-width: 567px)");
+            // mobile(value);
+            // value.addListener(mobile);
             
           }
         return(
             <div>
-    <div className="lpage" style={{height: '65vh'}}>
+    <div className="lpage" style={{height: '94vh', border: '1px solid transparent'}}>
     <div className="container" style={Container}>
     <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+    <h3 style={{color: '#fff', fontWeight:'bold'}}> Hello! </h3>
     <h1 className="lpage-header"> Olajide Joshua. </h1>
     </Animated>
-    <Text className="lpage-text">Javascript developer and lifelong learner.</Text>
+    <Text className="lpage-text">User-interface Designer. Javascript developer. Lifelong learner.</Text>
     <div className="btn-group">
         <Link to="/contact"><Button>Hire Me</Button> </Link>
         <Link to="/home"><Button style={btnStyle}>Take A Tour</Button></Link>
