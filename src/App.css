@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Pompiere&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
 body{
   font-family: 'Abel', sans-serif;
   transition: all 1s ease-in-out infinite;
