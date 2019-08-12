@@ -38,5 +38,9 @@
   "homepage": "https://github.com/joshtom/olajidejoshua",
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshtom/olajidejoshua"
   }
 }
