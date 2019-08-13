@@ -75,7 +75,7 @@ class Lpage extends React.Component {
           }
         return(
             <div>
-    <div className="lpage" style={{height: '94vh', border: '1px solid transparent'}}>
+    <div className="lpage" style={{height: '90vh', border: '1px solid transparent'}}>
     <div className="container" style={Container}>
     <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">

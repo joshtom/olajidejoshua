@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import Nav from './navbar'
 import Foot from './Footer'
 import './contactStyle.css'
-
-
+import Mail from './handlemail'
 
 class Contact extends Component {
     render() {
@@ -25,7 +24,7 @@ class Contact extends Component {
                             <input className="d-block w-100 c-input" type="email" placeholder="Your Email" id="email" />
                             <textarea className="d-block w-100 c-input" id="message" placeholder="Your Message"></textarea>
                             <p className="c-text">Please send urgent messages only.</p>
-                            <button className="drop-btn" > SHOOT ! </button> <span className="ama">Have a question? <a href="https://github.com/joshtom/ama">Ask me anything.</a></span>
+                            <button className="drop-btn" onClick={Mail.sayAlert}> SHOOT ! </button> <span className="ama">Have a question? <a href="https://github.com/joshtom/ama">Ask me anything.</a></span>
 
                         </form>
                     </div>
