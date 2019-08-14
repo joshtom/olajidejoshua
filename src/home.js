@@ -64,7 +64,7 @@ class Home extends React.Component {
  
         return(
             <div>
-            <div className="h-page" style={{height: '90vh', border: '1px solid trabsparent'}}>
+            <div className="h-page" style={{height: '87vh', border: '1px solid trabsparent'}}>
             <Nav />
             <Container className="container">
             <div className="row m-auto">

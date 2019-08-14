@@ -75,12 +75,12 @@ class Lpage extends React.Component {
           }
         return(
             <div>
-    <div className="lpage" style={{height: '90vh', border: '1px solid transparent'}}>
+    <div className="lpage" style={{height: '87vh', border: '1px solid transparent'}}>
     <div className="container" style={Container}>
     <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
-    <h1 className="lpage-header"> Hi. I'm Joshua,                                                </h1>
+    <h1 className="lpage-header"> Hi. I'm Joshua, </h1>
     </Animated>
     <Text className="lpage-text">I am a User-interface Designer, Javascript developer, and Lifelong learner.</Text>
     <div className="btn-group">
