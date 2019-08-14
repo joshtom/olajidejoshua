@@ -42,7 +42,11 @@ class Contact extends Component {
         text: `${Message}`,
         html: '<strong>and easy to do anywhere, even with Node.js</strong>',
         };
-        sgMail.send(msg);
+        if(sgMail.send(msg)){
+            alert('Your message has been sent Successfully');
+        } else {
+            alert("Error in sending message");
+        }
 
 
     }
@@ -59,7 +63,7 @@ class Contact extends Component {
                     <div className="col-lg-8 col-md-12 col-sm-12">
                         <h1 className="mb-3">contact</h1>
                         
-                       <center><h4 className="text text-danger text-center text-bold" id="output"></h4></center>
+                       <center><span className="text text-danger text-center text-bold" id="output"></span></center>
                         <form className="d-block w-100" onSubmit={this.handleSubmit}>
                             
                             <input 
