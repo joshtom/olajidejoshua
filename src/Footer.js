@@ -4,11 +4,12 @@ import styled from 'styled-components'
 const Footer = styled.footer`
     height: auto;
     ${'' /* position: absolute; */}
-    bottom: 10px;;
+    bottom: 10px;
     display: block;
     width: 100%;
     padding: 5px;
     background: transparent;
+    position: absolute;
     
 `
 const SocialIcons = styled.div`

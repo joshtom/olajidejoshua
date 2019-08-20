@@ -42,6 +42,7 @@ class Contact extends Component {
         text: `${Message}`,
         html: '<strong>and easy to do anywhere, even with Node.js</strong>',
         };
+        debugger;
         if(sgMail.send(msg)){
             alert('Your message has been sent Successfully');
         } else {
@@ -57,8 +58,9 @@ class Contact extends Component {
         }
         return(
             <div>
+            <div style={{height: '95vh', position: 'relative'}}>
             <Nav />
-            <div className="container mt-5 p-2 mb-4">
+            <div className="container mt-5 p-2">
                 <div className="row">
                     <div className="col-lg-8 col-md-12 col-sm-12">
                         <h1 className="mb-3">contact</h1>
@@ -98,6 +100,7 @@ class Contact extends Component {
                 </div>
             </div>
             <Foot />
+            </div>
             </div>
         )
     }
