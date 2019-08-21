@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import Nav from './navbar'
 import Foot from './Footer'
 import './contactStyle.css'
+import swal from 'sweetalert';
+
+
 
 class Contact extends Component {
     constructor(props){
@@ -22,34 +25,26 @@ class Contact extends Component {
         });
     }
 
+    
     handleSubmit(event) {    
-        console.log(this.state.name);
+        console.log(this.state.name);                                                                                                           
         console.log(this.state.email);
         console.log(this.state.message);
         event.preventDefault();
-        const Name = this.state.name;
-        const Email = this.state.name;
-        const Message = this.state.name;
+        const recepient = "olajidejoshua4real@gmail.com"
+        let Name = this.state.name;
+       let Email = this.state.email;
+        let Message = this.state.message;
 
-        // using Twilio SendGrid's v3 Node.js Library
-        // https://github.com/sendgrid/sendgrid-nodejs
-        const sgMail = require('@sendgrid/mail');
-        sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-        const msg = {
-        to: 'olajidejoshua4real@gmail.com',
-        from: 'olajidejoshua4real@gmail.com',
-        subject: `Message From My Portfolio ${Name}, ${Email}`,
-        text: `${Message}`,
-        html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-        };
-        debugger;
-        if(sgMail.send(msg)){
-            alert('Your message has been sent Successfully');
-        } else {
-            alert("Error in sending message");
-        }
-
-
+        fetch(`http://127.0.0.1:4000/send-email?recipient=${recepient}&sendermail=${Email}&text=${Message}&sendername=${Name}`)
+        .catch(e => console.error(e))   
+        swal("Success!", "Your email has been sent, I will get back to you soon.", "success");  
+        this.setState({
+            name: '',
+            email: '',
+            message: ''
+        })
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
     }
     render() {
         if(this.props.location.pathname){

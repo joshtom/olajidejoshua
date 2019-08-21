@@ -5,6 +5,8 @@
   "dependencies": {
     "@sendgrid/mail": "^6.4.0",
     "animate.css": "^3.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-animated-css": "^1.2.1",
@@ -12,7 +14,8 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "sendgrid": "^4.2.0",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "sweetalert": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
