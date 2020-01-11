@@ -20,11 +20,13 @@ class About extends React.Component {
                     <div>
                     <h1>  A little about me! </h1>
                     <article style={{fontSize: '1.3rem'}}>I am an experienced User Interface Designer, Javascript Developer, and Life Long Learner. I live a simple and optimistic life and I always put on a smiling face. When I am not in front of my computer, I'm either playing Game or playing piano and enjoying the Harmony. <br />
-                        Over the past few years I've built products that solve real-life problems ranging from Businesses to companies with focus on creating fast, and accessible user experiences using advanced web technologies. I am currently a FrontEnd Engineer at LPIHUB, an innovative hub that offers services like Robotics, Linux Training & Certification and so much more. At lpihub I take both web classes and linux essentials.
+                        Over the past few years I've built products that solve real-life problems ranging from Businesses to companies with focus on creating fast, and accessible user experiences using advanced web technologies. 
                         <br />
-                        I am passionate about web performance, Javascript applications, Great user experiences, and Open Source <b>#Linux</b>, and i'm also open for consulation, remote or contract work. 
+                        I am currently a FrontEnd Engineer at LPIHUB, an innovative hub that offers services like Robotics, Linux Training & Certification and so much more.
+                        <br />
+                        I am passionate about web performance, Javascript applications, Great user experiences, and Open Source <b>#Linux</b>, and i'm also open for consultation, remote or contract work. 
                         <br /> <br />
-                        <h3 style={{color:'yellow'}}> Available for full time job from [August 2019]. </h3>
+                        <h3 style={{color:'yellow'}}> Available for full time job from [February 2020]. </h3>
                     </article>
 
                     </div>
