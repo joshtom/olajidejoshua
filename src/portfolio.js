@@ -56,7 +56,8 @@ class Portfolio extends Component {
                     {/* <div className="p-img">
                     
                     </div> */}
-                    <i className="fa fa-briefcase float-right"></i>
+                    <a href="https://docs.google.com/document/d/1gR6iA6uJdbJJkzKgfTN9AFEEACLxKvB3QmrrWHycgZQ/edit?usp=sharing" className="btn btn-primary float-right" target="_blank">View Resume</a>
+                    
                 </div>
             </div>
             <div className="row m-auto mb-2">
@@ -120,6 +121,8 @@ class Portfolio extends Component {
         </div>
         <hr />
         <article> To view more Projects, Check my <a href="https://github.com/joshtom?tab=repositories"  title="https://github.com/joshtom?tab=repositories">Github</a> </article>
+        
+        
             </div>
             </div>
             <div className="mt-4"> 
